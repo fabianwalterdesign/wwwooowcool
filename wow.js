@@ -2,18 +2,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Intro Slide-In
-gsap.from(".quote_span", {
-  opacity: 0,
-  y: "100%",
-  stagger: 0.1,
-  duration: 0.6,
-  ease: "easeOutQuart",
-  scrollTrigger: {
-    trigger: ".intro_quote_wrap",
-    start: "top 60%",
-    end: "bottom 20%"
-  }
-});
 
 gsap.fromTo(".intro_quote_sticker_wrap", {
   x: "-40vw",
@@ -38,19 +26,6 @@ gsap.from(".intro_paragraph", {
   scrollTrigger: {
     trigger: ".intro_paragraph_wrap",
     start: "top 30%",
-    end: "bottom 20%"
-  }
-});
-
-gsap.from(".conclusion_span", {
-  opacity: 0,
-  y: "100%",
-  stagger: 0.1,
-  duration: 0.6,
-  ease: "easeOutQuart",
-  scrollTrigger: {
-    trigger: ".intro_conclusion_wrap",
-    start: "top 90%",
     end: "bottom 20%"
   }
 });
