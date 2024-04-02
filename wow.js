@@ -38,7 +38,7 @@ gsap.from(".quiz_answer", {
   ease: "easeOutQuart",
   scrollTrigger: {
     trigger: ".quiz_content_wrap.u-grid-autofit",
-    start: "top 90%",
+    start: "top 40%",
     end: "bottom 20%"
   }
 });
