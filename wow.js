@@ -55,6 +55,19 @@ gsap.from(".conclusion_span", {
   }
 });
 
+gsap.from(".quiz_answer", {
+  opacity: 0,
+  y: "100%",
+  stagger: 0.3,
+  duration: 0.6,
+  ease: "easeOutQuart",
+  scrollTrigger: {
+    trigger: ".quiz_content_wrap",
+    start: "top 60%",
+    end: "bottom 20%"
+  }
+});
+
 
 // matter.js Functions
 
